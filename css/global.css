@@ -1,0 +1,123 @@
+/* 
+    Document   : global
+    Created on : 04 27, 12, 7:32:58 PM
+    Author     : Ej Sulit
+    Description:
+        Global styles
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    
+}
+body{
+    background: url('../images/colors_bg.png') repeat-y; 
+    background-size: 100% auto;
+}
+h2{
+    font: bold 25px Tahoma;
+    text-shadow: 2px 2px 3px #cccccc;
+    padding: 5px;
+    margin: 10px;
+}
+hr{
+    margin: 5px;
+}
+p{
+    font: normal 16px Tahoma;
+    padding: 15px;
+}
+a{
+    text-decoration: none;
+}
+
+/*INDEX*/
+
+#wrapper{
+    width: 100%;
+    position: relative;
+}
+#header{
+    background: url('../images/header.jpg') center no-repeat;
+    background-size: 100% 100%;
+    height: 200px;  
+    box-shadow: 3px 3px 3px #999;
+}
+#nav{
+    text-align: center;
+}
+    .navigation{
+        margin:0;
+        padding:0;
+        text-align: right;
+        list-style: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 5;
+        height: 20px;
+        width: 120px;
+    }
+    .navigation li{
+        display: block;
+        padding: 5px;   
+        margin-left: -4px;
+        margin-top: 5px;
+        font: bold 18px Tahoma;
+        background: blue;
+        box-shadow: 3px 3px 3px #999;
+        width: 100px;
+    }
+    .navigation li img{
+        text-align: center;
+    }
+    .navigation a.nav_links{
+        color: white;
+        text-shadow: 5px 2px 5px black;
+    }
+    .navigation li:hover{
+        text-shadow: 1px 2px 2px black;
+        background: yellow;
+        width: 150px;
+        -webkit-transition: all 0.2s ease;
+    }
+    .nav_links{
+        cursor: pointer;
+    }
+
+#content{
+    margin: 50px 10% 50px 10%;
+    position : relative;
+
+}
+
+.loader{
+     margin-left: 38%;
+     margin-right: 38%;
+     position: relative;
+}
+
+#footer{
+    background: url('../images/footer_bg.gif') no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+    height: 80px;
+    box-shadow: -3px -3px 3px #999;
+}
+#footer p{
+    text-shadow: 5px 5px 10px #cccccc;
+    font: normal 14px Tahoma;
+}
+#footer a{
+    color: black;
+}
+#footer a:hover{
+    text-decoration: underline;
+    background: none;
+}
+.select{
+    background: yellow;
+}

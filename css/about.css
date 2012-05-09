@@ -1,0 +1,20 @@
+/* 
+    Document   : about
+    Created on : 04 27, 12, 11:40:02 PM
+    Author     : Ej Sulit
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+#about{
+    height: 800px;
+    margin: 5px;
+    background: url('../images/paperbg.gif') no-repeat;
+    background-size: 100% 100%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #ccc;
+}
+#about p{
+    text-shadow: 1px 5px 5px #999;
+}
+

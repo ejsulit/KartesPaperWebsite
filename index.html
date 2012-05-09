@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kartes Paper Company Website</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="css/global.css" />
+        <link rel="stylesheet" href="css/home.css" />
+        <link rel="stylesheet" href="css/products.css" />
+        <link rel="stylesheet" href="css/about.css" />
+        <link rel="stylesheet" href="css/contacts.css" />
+        <link rel="stylesheet" href="css/lightbox.css" />
+        <link rel="stylesheet" href="css/style6.css" />
+        
+
+        <script src="js/jquery.js"></script>
+        <script src="js/jquery-ui.js"></script>
+        
+        <script src="js/jquery.easing.js"></script>
+        <script src="js/script.js"></script>
+        
+        <script type="text/javascript">
+            $(document).ready( function(){	
+                var buttons = { previous:$('#jslidernews3 .button-previous') ,
+                                                next:$('#jslidernews3 .button-next') };
+
+                var _complete = function(slider, index){ 
+                                                                $('#jslidernews3 .slider-description').animate({height:0});
+                                                                slider.find(".slider-description").animate({height:100}) 
+                                                };;
+                $('#jslidernews3').lofJSidernews( { interval : 4000,
+                                                    direction	: 'opacity',	
+                                                    easing	: 'easeOutBounce',
+                                                    duration	: 1200,
+                                                    auto	: true,
+                                                    mainWidth   : 980,
+                                                    buttons	: buttons,
+                                                    onComplete  :_complete 
+                                                });	
+            });
+        </script>
+
+    </head>
+    <body>
+        <div id="backdrop"></div>
+        <div id="lightbox">
+            <div id="close">
+                    <img src="images/close.gif"/>
+            </div>
+            <div id="caption">
+                    <p class="caption"></p>
+            </div>
+        </div>		
+        <div id="wrapper">
+            <div id="header"></div>
+            <div id="nav">
+                <ul class="navigation">
+                    <li><img src="images/logo.png" height="80" width="105" class="nav_links"/></li>
+                    <li><a class="nav_links" href="home.html">Home</a></li>
+                    <li><a class="nav_links" href="products.html">Products</a></li>
+                    <li><a class="nav_links" href="about.html">About Us</a></li>
+                    <li><a class="nav_links" href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            
+            <div id="content">
+        <!-- Home -->
+            <div id="home">
+                    <div id="title">
+                        <span>Welcome to Kartes Website</span>
+                    </div>
+                    <div id="slider">
+                        <!------------------------------------- THE CONTENT ------------------------------------------------->
+                        <div id="jslidernews3" class="lof-slidecontent" style="width:980px; height:340px;">
+                                <div class="preload"><div></div></div>
+                                    <div  class="button-previous">Previous</div>
+                            <!-- MAIN CONTENT --> 
+                            <div class="main-slider-content" style="width:980px; height:380px;">
+                                        <ul class="sliders-wrap-inner">
+                                            <li>
+                                                <img src="images/thumbl_980x340.png" title="Newsflash 1" >           
+                                            </li> 
+                                            <li>
+                                                <img src="images/thumbl_980x340_002.png" title="Newsflash 2" >           
+                                            </li> 
+                                            <li>
+                                                <img src="images/thumbl_980x340_003.png" title="Newsflash 3" >            
+                                            </li>                                        
+                            </ul>  	
+                                    </div>
+                                        <!-- END MAIN CONTENT --> 
+                            <div class="button-next">Next</div>
+                        </div> 
+                        <div id="desc">
+                            <p>The Kartes Paper Company is one of the paper supply companies situated in the Philippines, delivering paper sent from the manufacturer to the different destinations here in the National Capital Region (NCR).The company will receive the packages from the manufacturer in the Philippines and they will deliver it to the authorized representative that they transact with. Its main office in the Philippines, is located at Lower Bicutan, Taguig City is the prospective client of the proponents to conduct the proposal of the system and the study.</p>
+                            <p>The proposed system is a management system with online interface which is an effective system managing business providing an inventory and a web based interface for their clients.  By using the web, this will enable the client to view product options and also as an advertising agent for the Kartes Paper Company.</p>
+                        
+                        </div>
+                    </div>
+                <!------------------------------------- END OF THE CONTENT ------------------------------------------------->
+            </div>
+
+        <!-- Products -->
+            <div id="prods">
+                <h2 class="title">Products</h2>
+                    <div id="container">
+                        
+                        <div id="boards">
+                            <img src="images/boards.png" />
+                            <div id="boards_img">
+                                <a class="box" href="images/products/bigflower-blue.png" title="Test"><img class="show" src="images/products/bigflower-blue.png" height="180" width="180" title="Big Flower (Blue)"/></a>
+                                <a class="box" href="images/products/bigflower-green.png"><img class="show" src="images/products/bigflower-green.png" height="180" width="180" title="Big Flower (Green)"/></a>
+                                <a class="box" href="images/products/leaves-blue.png"><img class="show" src="images/products/leaves-blue.png" height="180" width="180" title="Leaves (Blue)"/></a>
+                                <a class="box" href="images/products/leaves-peach.png"><img class="show" src="images/products/leaves-peach.png" height="180" width="180" title="Leaves (Peach)"/></a>
+                                <a class="box" href="images/products/maple-blue.png"><img class="show" src="images/products/maple-blue.png" height="180" width="180" title="Maple (Blue)"/></a>
+                                <a class="box" href="images/products/maple-green.png"><img class="show" src="images/products/maple-green.png" height="180" width="180" title="Maple (Green)"/></a>
+                              </div>
+                        </div>
+                        
+                        <div id="papers">
+                            <img src="images/papers.png" />
+                            <div id="papers_img">
+                                <a class="box" href="images/products/smallflower-green.png"><img class="show" src="images/products/smallflower-green.png" height="180" width="180" title="Small Flower (Green)"/></a>
+                                <a class="box" href="images/products/smallflower-purple.png"><img class="show" src="images/products/smallflower-purple.png" height="180" width="180" title="Small Flower (Purple)" /></a>
+                                <a class="box" href="images/products/leaves-pink.png"><img class="show" src="images/products/leaves-pink.png" height="180" width="180" title="Leaves (Pink)"/></a>
+                                <a class="box" href="images/products/leaves-purple.png"><img class="show" src="images/products/leaves-purple.png" height="180" width="180" title="Leaves (Purple)"/></a>
+                                <a class="box" href="images/products/panda-blue.png"><img class="show" src="images/products/panda-blue.png" height="180" width="180" title="Panda (Blue)"/></a>
+                                <a class="box" href="images/products/panda-green.png"><img class="show" src="images/products/panda-green.png" height="180" width="180" title="Panda (Green)"/></a>
+                              </div>
+                        </div>
+                    </div>
+            </div>
+
+            <!-- About Us -->
+            <div id="about">
+                    <h2>About Us</h2>
+                    <p class="desc">The Kartes Paper Company is a paper supply company in Metro Manila, 
+                                        Philippines providing prime and swift service to its clients in the Region, 
+                                        carrying paper packages in and out of the Taguig city area. The Kartes Paper Company is one of the paper supply companies situated in the Philippines, 
+                                        delivering paper sent from the manufacturer to the different destinations here in the National Capital Region (NCR).
+                                        The company will receive the packages from the manufacturer in the Philippines and they will deliver it to the authorized representative that they transact with.
+                                        Its main office in the Philippines, is located at Lower Bicutan, Taguig City.
+                                    </p>
+                                    <hr>
+                                    <center><img class="show" src="images/a.jpg" height="150" width="150" />
+            <img class="show" src="images/b.jpg" height="150" width="150" />
+            <img class="show" src="images/c.jpg" height="150" width="150" />
+            <img class="show" src="images/d.jpg" height="150" width="150" /></center>
+            <hr>
+                                    <p>The Kartes Paper Company is one of the paper supply companies situated in the Philippines, delivering paper sent from the manufacturer to the different destinations here in the National Capital Region (NCR).The company will receive the packages from the manufacturer in the Philippines and they will deliver it to the authorized representative that they transact with. Its main office in the Philippines, is located at Lower Bicutan, Taguig City is the prospective client of the proponents to conduct the proposal of the system and the study.</p>
+                            <p>The proposed system is a management system with online interface which is an effective system managing business providing an inventory and a web based interface for their clients.  By using the web, this will enable the client to view product options and also as an advertising agent for the Kartes Paper Company.</p>
+
+            </div>
+
+            <!-- Contact Us -->
+            <div id="contact">
+                    <h2>Contact Us</h2>
+                    <p class="desc">The Kartes Paper Company is a paper supply company in Metro Manila, 
+                                    Philippines providing prime and swift service to its clients in the Region, carrying paper packages in and out of the Taguig. 
+                                    <br /><br />We are located at: 12 I. Reyes St. Lower Bicutan, Taguig City
+                                    <br /><br />Contact Number: 838-10-35</p>      
+                    <hr>
+                    <center><img src="images/thumbl_980x340_003.png" /></center>
+                    <hr>
+                        </div>  
+            </div>
+            
+        <div id="footer">
+            <p>&copy;Copyright Kartes Paper Company 2012</p>
+            <a href="php/index.php">go to admin page</a>
+        </div>
+      </div>
+     
+		
+        <script src="js/control.js"></script>
+        <script src="js/products.js"></script>
+    </body>
+</html>

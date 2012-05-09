@@ -1,0 +1,63 @@
+@charset "utf-8";
+/* CSS Document */
+#slider{
+    position: relative;
+    top: 0;
+    left: 50%;
+    margin-left: -500px;
+    max-width: 900px;
+}
+/* slider layout */
+.lof-slidecontent { position:relative;	overflow:hidden;	border:#F4F4F4 solid 1px;}
+.lof-slidecontent .preload{	height:100%;	width:100%;	position:absolute;	top:0;	left:0;	z-index:100000;	text-align:center;	background:#FFF}
+.lof-slidecontent .preload div{	height:100%;	width:100%;	background:transparent url('../images/load-indicator.gif') no-repeat scroll 50% 50%;}
+
+.lof-slidecontent  .sliders-wrapper{	position:relative;	height:100%;	width:900px;	z-index:3;	overflow:hidden; }
+.lof-slidecontent  ul.sliders-wrap-inner{overflow:hidden;	background:transparent url('../images/load-indicator.gif') no-repeat scroll 50% 50%;	padding:0px;	margin:0;	position:absolute;	overflow:hidden;}
+.lof-slidecontent  ul.sliders-wrap-inner li{overflow:hidden;	padding:0px;margin:0px;	float:left;	position:relative;}
+.lof-slidecontent  .lof-opacity { width:100%; height:100%; }
+.lof-slidecontent  .lof-opacity  li{position:absolute!important;	top:0;	left:0;	float:inherit!important; }
+
+
+.lof-slidecontent  .navigator-content {position:absolute;
+	left:0;
+	top:00px;
+	z-index:100;
+	height:300px;
+	width:310px;
+	overflow:hidden;
+	color:#FFF
+}
+.lof-slidecontent  .navigator-wrapper{	position:relative;	z-index:10;
+	height:180px;
+	width:310px;
+	overflow:hidden;
+	color:#FFF;
+	float:left
+}
+.lof-slidecontent  ul.navigator-wrap-inner{	top:0;	padding:0;	margin:0;	position:absolute;	width:100%; }
+.lof-slidecontent  ul.navigator-wrap-inner li{ cursor:hand; 	cursor:pointer;	list-style:none;	padding:0;	margin-left:0px;	overflow:hidden;	float:left;	display:block;	text-align:center;}
+
+/*******************************************************/
+
+.lof-slidecontent  .button-next, 
+.lof-slidecontent .button-previous{
+	display:block;
+	width:40px;
+	color:#FFF;
+	cursor:pointer;
+	position:absolute;
+	height:100%;
+	z-index:40;
+	top:0;
+	text-indent:-999px;
+
+}
+.lof-slidecontent   .button-next {
+	right:05px;
+	background:url(../images/b_next.png) no-repeat right center;
+}
+.lof-slidecontent  .button-previous {
+	left:05px;
+	background:url(../images/b_prev.png) no-repeat left center;
+}

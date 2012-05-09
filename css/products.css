@@ -1,0 +1,63 @@
+/* 
+    Document   : products
+    Created on : 04 27, 12, 7:36:19 PM
+    Author     : Ej Sulit
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/*PRODUCTS*/
+#prods{
+    height: 1500px;
+    margin: 5px;
+/*    background: url('../images/rb.jpg') no-repeat;*/
+     background-size: 100% 100%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #ccc;
+}
+#prods .title{
+    text-align: center;
+    border-radius: 10px;
+    border: 1px groove #eee;
+    margin: 25px;
+    box-shadow: 5px 5px 2px #999;
+    background-image: -webkit-linear-gradient(right bottom, #3C592E 10%, #5A744A 55%, #759768 78%);
+    color: white;
+    text-shadow: 5px 5px 2px #000;
+}
+#container{
+    text-align: center;
+    height: 600px;
+    margin: 20px;
+}
+#container img{
+    border-radius: 10px;
+    margin: 5px;
+}
+#container img:hover{
+    box-shadow: 2px 2px 5px #000;
+    cursor: pointer;
+}
+#boards{
+    background: url('../images/paperbg.gif');
+    border: 1px solid #ffcc00;
+    box-shadow: 5px 5px 10px #cccccc;
+    margin: 15px;
+    float: left;
+}
+#papers{
+    background: url('../images/paperbg.gif');
+    border: 1px solid #ffcc00;
+    box-shadow: 5px 5px 10px #cccccc;
+    margin: 15px;
+    float: left;
+}
+#boards_img{
+    
+}
+#papers_img{
+
+}
+.show{
+    margin: 5px;
+}

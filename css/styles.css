@@ -1,0 +1,338 @@
+/* 
+    Document   : style
+    Created on : 03 18, 12, 3:10:02 PM
+    Author     : Ej Sulit
+    Description:
+        Purpose of the stylesheet follows.
+*/
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    background: url('../images/body_bg.gif');
+}
+body{
+    background: url('../images/colors_bg.png') repeat-y; 
+    background-size: 100% auto;
+}
+h2{
+    font: bold 25px Tahoma;
+    text-shadow: 2px 2px 3px #cccccc;
+    padding: 5px;
+    margin: 10px;
+}
+hr{
+    margin: 5px;
+}
+p{
+    font: normal 16px Tahoma;
+    padding: 15px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/*INDEX*/
+
+#wrapper{
+    width: 100%;
+    position: relative;
+}
+#header{
+    background: url('../images/header.jpg') center no-repeat;
+    background-size: 100% 100%;
+    height: 200px;   
+    box-shadow: 3px 3px 3px #999;
+}
+#nav{
+    text-align: center;
+}
+#nav img{
+    display: none;
+}
+    .navigation{
+        margin:0;
+        padding:0;
+        text-align: center;
+        list-style: none;
+    }
+    .navigation li{
+        display: inline-block;
+        padding: 5px;   
+        margin-left: 15px;
+        margin-top: 10px;
+        font: bold 18px Tahoma;   
+    }
+    .navigation a{
+        padding: 5px;
+        color: black;
+    }
+    .navigation a:hover{
+        transition: all 0.2s ease;
+        color: white;
+        text-shadow: 5px 5px 15px black;
+        background: #0000ff;
+        border: 1px ridge white;
+        border-radius: 10px;
+        
+    }
+#content{
+    margin: 50px 10% 50px 10%;
+    position : relative;
+    height: 900px;
+}
+
+.loader{
+     margin-left: 38%;
+     margin-right: 38%;
+     position: relative;
+}
+
+#footer{
+    background: url('../images/footer_bg.gif') no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+    height: 107px;
+    box-shadow: -3px -3px 3px #999;
+}
+#footer p{
+    padding-top: 50px;
+    text-shadow: 5px 5px 10px #cccccc;
+}
+#footer a:hover{
+    text-decoration: underline;
+    background: none;
+}
+
+/*------------------------ ADMIN PAGE -----------------------------*/
+
+#login{
+    padding: 15px;
+    width: 180px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-top: -400px;
+    margin-left: -100px;
+    background: rgba(0,0,0,0.6);
+    border-radius: 10px;
+}
+#login input{
+    margin: 3px;
+    font: normal 14px Tahoma;
+ }
+#login img{
+    display: none;
+}
+#login span{
+    color: white;
+}
+#display{
+    border-radius: 3px;
+    padding: 10px;
+    color: white;
+    font: bold 16px Tahoma;
+    width: 200px;
+    background: #999;
+    box-shadow: 0px 0px 5px 1px #444444;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -110px;
+    display: none;
+    text-align: center;
+}
+/* HOME */
+
+#list{
+    text-align: center;
+    margin: 10px;
+}
+#list img{
+    margin: 5px;
+    border-radius: 10px;
+}
+#list img:hover{
+    box-shadow: 2px 2px 2px #ccc;
+}
+
+/* Tables */
+
+#products_table{
+    position: absolute;
+    display: none; 
+}
+
+#customers_table{
+    position: absolute;
+    z-index: 1;
+    display: none;
+}
+
+#products{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin: 0 0 0 -250px;
+    width: 900px;
+    max-width: 900px;
+}
+
+#reports_table{
+    display: none; 
+    text-align: center;
+}
+
+#reports_table ul{
+    list-style: none;
+	margin-left: 15px;
+	margin-left: 15px;
+}
+#reports_table ul li{
+	display: inline-block;
+}
+#reports_table ul li:hover{
+    text-decoration: underline;
+}
+#reports_table ul h2{
+	text-align: center;
+	border: 1px solid black;
+	border-radius: 10px;
+	box-shadow: 2px 2px 5px #cccccc inset;
+        background: #FFF;
+}
+#orders, #inventory{
+    display: none;
+}
+
+
+/* table style */
+table.tablesorter {
+	font-family:arial;
+	background-color: #FFF;
+	margin:10px 28pt 15px;
+	font-size: 8pt;
+	width: 100%;
+	text-align: left;
+        border-collapse: collapse;
+}
+table.tablesorter thead tr th, table.tablesorter tfoot tr th {
+	background-color: #e6EEEE;
+	border: 1px solid #FFF;
+	font: bold 12pt Tahoma;
+	padding: 10px;
+}
+table.tablesorter thead tr .header {
+	background-image: url('../images/bg.gif');
+	background-repeat: no-repeat;
+	background-position: center right;
+	cursor: pointer;
+}
+table.tablesorter tbody td {
+	color: #3D3D3D;
+	padding: 10px;
+/*	background-color: #FFF;*/
+	vertical-align: top;
+        font: normal 14px Tahoma;
+}
+table.tablesorter tbody tr.odd td {
+	background-color:#F0F0F6;
+}
+table.tablesorter thead tr .headerSortUp {
+	background-image: url('../images/asc.gif');
+}
+table.tablesorter thead tr .headerSortDown {
+	background-image: url('../images/desc.gif');
+}
+table.tablesorter thead tr .headerSortDown, table.tablesorter thead tr .headerSortUp {
+        background-color: #8dbdd8;
+}
+.highlight{
+    text-decoration: underline;
+}
+tr td input{
+    display: none;
+}
+#alert{
+    border: 1px solid white;
+    background: blue;
+    border-radius: 2px;
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -500px 0 0 -400px;
+    display: none;
+    font: bold 14px Tahoma;
+    color: white;
+}
+
+#modify{
+    position: relative;
+    top: 0;
+    left: 50%;
+    margin: 0 0 0 -100px;
+    width: 200px;
+}
+#modify input{
+    margin: 0 10px 0 0;
+    width: 50px;
+    font: bold 14px Tahoma;
+}
+.trash{
+    margin-left: 25px;
+    height: 15px;
+    width: 15px;
+}
+.trash:hover{
+    background: #cccccc;
+}
+.delete{
+/*    display: none;*/
+}
+.add{
+    font: bold 12px Tahoma;
+    color: white;
+    background: blue;               
+}
+.add:hover{
+    text-decoration: underline;
+}
+#add_data, #add_prod{
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    background: rgba(0,0,0,0.8);
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    display: none;
+}
+
+label{
+    width: 150px;
+    float: left;
+    display: block;
+    font: bold 12px Tahoma;
+    text-shadow: 3px 3px 3px #cccccc;
+}
+#fill{
+    width: 315px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    margin: -200px 0 0 -150px;
+    background: #F0F0F6;
+    padding: 5px;
+    box-shadow: 3px 3px 3px #cccccc;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+#submit,#cancel, #no, #yes{
+    width: 155px;
+}

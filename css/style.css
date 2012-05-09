@@ -1,0 +1,222 @@
+/* 
+    Document   : style
+    Created on : 03 18, 12, 3:10:02 PM
+    Author     : Ej Sulit
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/*------------------------ ADMIN PAGE -----------------------------*/
+
+#login{
+    padding: 5px;
+    width: 180px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-top: -400px;
+    margin-left: -80px;
+}
+#login input{
+    margin: 3px;
+    font: normal 14px Tahoma;
+}
+#login img{
+    display: none;
+}
+#display{
+    border-radius: 3px;
+    padding: 5px;
+    color: red;
+    font: italic 14px Tahoma;
+    width: 200px;
+    background: #ffffef;
+    box-shadow: inset 0px 0px 5px 1px #444444;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -110px;
+    display: none;
+    text-align: center;
+}
+/* HOME */
+.logo{
+    position: relative;
+    left: 50%;
+    margin-left: -100px;
+}
+
+/* Tables */
+
+#products_table{
+    position: absolute;
+    display: none; 
+}
+
+#customers_table{
+    position: absolute;
+    z-index: 1;
+    display: none;
+}
+
+#reports_table{
+    display: none; 
+    text-align: center;
+}
+
+#reports_table ul{
+    list-style: none;
+	margin-left: 15px;
+	margin-left: 15px;
+}
+#reports_table ul li{
+	display: inline-block;
+}
+#reports_table ul li:hover{
+    text-decoration: underline;
+}
+#reports_table ul h2{
+	text-align: center;
+	border: 1px solid black;
+	border-radius: 10px;
+	box-shadow: 2px 2px 5px #cccccc inset;
+}
+#orders, #inventory{
+    display: none;
+}
+
+
+/* table style */
+table.tablesorter {
+	font-family:arial;
+	background-color: #FFF;
+	margin:10px 30pt 15px;
+	font-size: 21px;
+	width: 100%;
+	text-align: left;
+        border-collapse: collapse;
+}
+table.tablesorter thead tr th, table.tablesorter tfoot tr th {
+	background-color: #e6EEEE;
+	border: 1px solid #FFF;
+	font: bold 16px Tahoma;
+	padding: 15px;
+}
+table.tablesorter thead tr .header {
+	background-image: url('../images/bg.gif');
+	background-repeat: no-repeat;
+	background-position: center right;
+	cursor: pointer;
+}
+table.tablesorter tbody td {
+	color: #3D3D3D;
+	padding: 8px;
+/*	background-color: #FFF;*/
+	vertical-align: top;
+        font: normal 12px Tahoma;
+}
+table.tablesorter tbody tr.odd td {
+	background-color:#F0F0F6;
+}
+table.tablesorter thead tr .headerSortUp {
+	background-image: url('../images/asc.gif');
+}
+table.tablesorter thead tr .headerSortDown {
+	background-image: url('../images/desc.gif');
+}
+table.tablesorter thead tr .headerSortDown, table.tablesorter thead tr .headerSortUp {
+        background-color: #8dbdd8;
+}
+.highlight{
+    text-decoration: underline;
+}
+tr td input{
+    display: none;
+}
+#alert{
+    border: 1px solid white;
+    background: blue;
+    border-radius: 2px;
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin: -150px 0 0 -380px;
+    display: none;
+    font: bold 14px Tahoma;
+    color: white;
+    z-index: 1;
+}
+
+#modify{
+    position: relative;
+    top: 0;
+    left: 50%;
+    margin: 0 0 0 -100px;
+    width: 200px;
+}
+#modify input{
+    margin: 0 10px 0 0;
+    width: 50px;
+    font: bold 14px Tahoma;
+}
+.trash{
+    margin-left: 25px;
+    height: 15px;
+    width: 15px;
+}
+.trash:hover{
+    background: #cccccc;
+}
+.delete{
+/*    display: none;*/
+}
+.add{
+    float: right;
+    font: bold 12px Tahoma;
+    color: red;
+	margin-right: -50px;
+}
+.add:hover{
+    color: blue;
+    text-decoration: underline;
+}
+#add_data{
+    width: 100%;
+    height: 500px;
+    padding: 5px;
+    background: rgba(255,255,255,0.8);
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+    margin: -145px 0 0 0;
+    display: none;
+}
+label{
+    width: 150px;
+    float: left;
+    display: block;
+    font: bold 12px Tahoma;
+    text-shadow: 3px 3px 3px #cccccc;
+}
+#fill{
+    width: 315px;
+    position: relative;
+    left: 50%;
+    top: 0;
+    margin: 0 0 0 -150px;
+    background: #F0F0F6;
+    padding: 5px;
+    box-shadow: 3px 3px 3px #cccccc;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+#submit,#cancel{
+    width: 155px;
+}
+.print{
+    float: right;
+}
