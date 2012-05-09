@@ -1,11 +1,11 @@
 <?php
 	$error = 'Could not connect';
 	
-	$host = 'localhost';
-	$user = 'root';
-	$pass = '';
+	$host = 'a.db.shared.orchestra.io';
+	$user = 'user_d6cb9903';
+	$pass = 'C4MCeOHHm-ef0;';
 	
-	$db = 'kartes_db';
+	$db = 'db_d6cb9903';
 	
 	if(!@mysql_connect($host,$user,$pass)||!@mysql_select_db($db)){
 		die($error);
